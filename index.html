@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155e75">
+  <title>إنجليزي في 100 يوم</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">📘 إنجليزي في 100 يوم</div>
+    <div class="tag">5 كلمات كل يوم · 500 كلمة</div>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">رحلتك تبدأ اليوم</p>
+      <h1>تعلّم الإنجليزية<br><span>خطوة بخطوة</span></h1>
+      <p>كلمات سهلة، نطق مبسّط، جمل من الحياة اليومية، ومراجعة مستمرة.</p>
+      <div class="progress-line"><span id="progressFill"></span></div>
+      <div class="stats">
+        <div><strong id="learnedCount">0</strong><small>كلمة مكتملة</small></div>
+        <div><strong id="dayCount">1 / 100</strong><small>اليوم الحالي</small></div>
+        <div><strong id="percent">0%</strong><small>التقدم</small></div>
+      </div>
+    </section>
+
+    <section class="lesson-head">
+      <div><p class="eyebrow">درس اليوم</p><h2 id="dayTitle">اليوم الأول</h2></div>
+      <span class="pill">5 كلمات</span>
+    </section>
+    <div id="wordList" class="word-list"></div>
+
+    <section class="quiz panel">
+      <div class="section-title"><div><p class="eyebrow">ثبّت ما تعلمته</p><h2>اختبار سريع</h2></div><span>🧠</span></div>
+      <p id="question" class="question">ما معنى كلمة Apple؟</p>
+      <div id="answers" class="answers"></div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <button id="nextQuestion" class="primary" disabled>السؤال التالي</button>
+    </section>
+
+    <section class="panel review">
+      <div class="section-title"><div><p class="eyebrow">مراجعة</p><h2>تقدّمك محفوظ</h2></div><span>⭐</span></div>
+      <p>يُحفظ تقدمك على هذا الجهاز تلقائياً. راجع الكلمات بصوت مسموع، ثم اختبر نفسك.</p>
+      <button id="completeDay" class="secondary">أنهيت درس اليوم</button>
+      <p id="completeMessage" class="feedback"></p>
+    </section>
+  </main>
+  <footer>نسخة تجريبية أولى · سنضيف بقية أيام البرنامج تدريجياً</footer>
+  <script src="app.js"></script>
+</body>
+</html>

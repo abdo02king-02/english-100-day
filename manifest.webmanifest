@@ -1,0 +1,10 @@
+{
+  "name": "إنجليزي في 100 يوم",
+  "short_name": "إنجليزي 100",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f8fa",
+  "theme_color": "#155e75",
+  "lang": "ar",
+  "dir": "rtl"
+}
